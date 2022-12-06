@@ -1,0 +1,196 @@
+:root{
+    --bg-black-900: #CCFFFF;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+}
+*{
+    /* padding: 0; */
+     margin: 0;
+    box-sizing: border-box; 
+    /* outline: none; */
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+body{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* button{
+    width: 200px;
+    height: 50px;
+    margin: 1px 0;
+    border: none;  
+    padding: 0 15px;
+    font-weight: 700;
+    border-radius: 10   px;
+}
+button i{
+    float: left;
+}
+button:hover{
+    background: #a5a4a4;
+}
+button:active{
+    color: #3f8df9;
+    background-color: #9ac0f7;
+}
+i:active{
+    color: #aacdfe;
+} */
+/* a{
+    scolor: rgb(25, 128, 239);
+}
+.form{
+    background: #bcc9f2;
+    width: 320px;
+    height: 400px;
+    border-radius: 15px;
+    margin: 100px auto;
+    padding: 70px;
+    position: relative;
+    
+}
+.form-title{
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 128px;
+}
+.form-field{
+    position: relative;
+    left: -50px;
+}
+.form-field input{
+    height: 30px;
+    width: 280px;
+    margin: 5px 0;
+}
+.form-field p{
+    margin-left: 3px;
+}
+.form-forgotpassword a{
+   position: relative;
+   right: -101px;
+   
+}
+.form-register{
+    display: flex;
+    position: relative;
+    left: 46px;
+}
+button{
+    height: 30px;
+    width: 250px;
+    margin: 10px -34px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-login {
+    background: #1877f2;
+    color: #fff;
+}   
+.btn-login:active{
+    background: #b8d1f2;
+}    
+.form-title1{
+    text-align: center;
+}
+ .btn-login-facebook{
+    background: #0456c2;
+    color: #fff;
+ }
+ i{
+    color: #fff;    
+ }
+/* table parent */
+
+/* .origin a{
+    position: relative;
+    width: 157px;
+    /* margin-right: -181px; 
+    background: hsl(83deg 60% 62%) url(//cdn.24h.com.vn/images/2014/menuDot.gif) 13px 10px no-repeat;
+    border-bottom: hsl(90deg 49% 47%) solid 1px;
+   
+    color: hsl(0deg 0% 0%);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+    line-height: 16px;
+    padding: 6px 0 5px 25px !important;
+    display: flex;
+    cursor: pointer;
+}
+.fly li{
+    width: 157px;
+    /* margin-right: -181px; 
+    background: rgb(86, 136, 5);
+    border-bottom: hsl(90deg 49% 47%) solid 1px;
+    color: hsl(0deg 0% 0%);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+    line-height: 16px;
+    padding: 6px 0 5px 25px !important;
+    display: flex;
+    cursor: pointer;
+}
+.fly{
+    display: none;
+    position: absolute;
+    left: 157px;
+    bottom: -92px;
+}
+.origin a:hover{
+    color: "pink";
+}
+.fly li:hover{
+    color: #fff;
+}
+li:hover .fly{
+    display: block;
+} 
+
+/* Layout  */
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.wp-header{
+    background: #55d4eb;
+    padding: 20px 0;
+    text-align: center;
+}
+.wp-content{
+    display: flex;
+}
+.wp-content-sibar{
+    flex-basis: 30%;
+    background: #a0c263;
+    min-height: 500px;
+}
+.wp-content-main{
+    flex-basis: 70%;
+   
+}
+.main-content{
+    background: orange;
+    min-height: 400px;
+    flex-basis: 90%;
+    text-align: center;
+}
+.extra-content{
+    background: gray;
+    min-height: 100px;
+    flex-basis: 10%;
+    text-align: center;
+}
+.wp-footer{
+    background: yellow;
+    padding: 20px 0;
+    text-align: center;
+}

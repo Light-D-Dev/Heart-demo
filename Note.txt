@@ -1,0 +1,160 @@
+        1. h6: là thẻ tiêu đề từ hi đén h6 => h1 là thể lớn nhất
+        2. p: paragraph Là thẻ để chèn văn bản 
+        3. img: là thẻ để chèn hình ảnh 
+        4. a: anchor giúp link tới trang web khác
+        5. ul,li: unordered list, list
+        6. table: 
+        7. input: có các dạng => nhap text, radio, checkbox
+        8. button: 
+        9. div: dùng để bao quanh khối
+
+        Có 3 cách sử dụng css trong html là: 
+         - Internal: là sử dụng thẻ style trong file html trực tiếp
+         - External: là sử dụng các file.css tách riêng biệt
+         - Inline: là sử dụng attribute(color,font-size,...) trên thẻ 
+
+        Priority:
+        -Độ ưu tiên giữa Internal và External(case: Internal có thuộc tính màu đỏ, External có thuộc tính  màu xanh):
+         + Không có độ ưu tiên cho Internal và External => Chỉ có cái nào xếp sau thì được ưu tiên hiện trước
+        -Độ ưu tiên theo thang điểm:
+         +1000: Inline
+         +100: #id
+         +10: .class
+         +1: tag
+        -Equal Specificity:
+         +sử dụng phương pháp tính điểm tổng để so sánh xem ai nhiều diểm hơn sẽ ưu tiên hiện lên (  +1000: Inline - 100: #id - 10: .class - 1: tag
+        -Universal selector and inheriedd: La phương pháp giúp áp dụng cho tất cả các thuộc tinh chung *{} => thang điểm là 0
+        -!important: thể hiện độ ưu tiên nhất tất cả 
+
+        CSS variabale?
+        -Sử dụng biến giản root để khai báo màu và dùng hàm var() để kế thừa biến root đó 
+
+        CSS Units
+         -Đơn vị tuyệt đối:
+          +px
+         -Đơn vị tương đối: cần phải có 1 nơi để phụ thuộc vào 
+          +%: phụ thuộc vào thẻ chứa nó
+          +rem: phụ thuộc vào thể html => ví dụ html{font-size: 20px} thì 1rem = 20px
+          +em: phụ thuộc vào thuộc tính của thẻ gần nhất 
+
+        Css padding
+         -Là chêm vào thêm kích thước cho thẻ gốc theo các hướng: Left,right,bottom,top
+         -Nếu nhập tắt theo giá trị thì: 
+          + Chỉ nhập padding: 10px => Được hiểu như Left,right,bottom,top đều có giá trị 10px
+          + Nếu nhập theo thứ tự: 1px, 2px, 3px, 4px => Được hiểu như: 1px: top| 2px: right| 3px: bottom| 4px: Left
+        
+        CSS Border
+         -Là thêm một lớp ngoài lớp padding
+         -Nếu nhập tắt theo giá trị thì:
+          + border-top: 10px solid #333; => Giải thích: border top sẽ được chêm thêm 10px, còn các vị trí khác thì 0px, có màu đệm ngoài là màu 333
+          + border: 10px solid #333; =>Giải thích: border các vị trí sẽ được chêm thêm 10px, 
+
+        CSS Margin
+         -Là tạo khoảng cách cho các elements đúng nghĩa mà không làm thay đổi kích thước của elements đó => Không chêm cho dày như các CSS pading và CSS Border
+
+        CSS Box-sizing
+         -Là tự động tính toán kích thước đúng với design khi mình có thêm các CSS padding or CSS Border
+          VD: .Box {
+                width: 100px;
+                height: 100px;
+                background-color: coral;
+                color: aliceblue;
+                padding: 10px;
+                border: solid #333;
+                box-sizing: border-box;
+                margin-top: 10px;
+          }
+          => Conten-box còn kích thước là: 100px-10-2.400 = 75.200
+
+        CSS Background-clip
+         -Là đổ màu từ phía vị trí mong muốn 
+          VD: 
+              .CSSBackground-clip{
+              width: 100%;
+              height: 100px;
+              background-color: black;
+              padding: 20px;
+              border: 10px dashed #ccc;
+              box-sizing: border-box;
+              background-clip: content-box;
+              }
+
+        CSS Background image
+
+        CSS Background size
+         - Background size: containt; => Có khoảng trắng ở bức ảnh
+         - Background size: cover; => Chấp nhận cắt bức ảnh để không bị hiện khoảng trắng 
+
+        CSS Background-origin
+         -Có thuộc tính giông như background-clip. Nhưng chỉ được sử dụng chung với background-image
+
+        CSS Background Position
+         -Là cho phép người dev có thể điều chỉnh vị trí khác nhau 
+
+        CSS Functions
+         -var()
+          linear-gradient()
+          rgba()
+          rgb()
+          calc()
+          attr()
+
+        CSS Pseudo classes
+         :root
+         :hover => là thuộc tính khi hover qua thì sẽ hiển thị thuộc tính khác, có thể thêm font-size để khi hover qua thì chữ sẽ to lên 
+         :acitve => là khi chúng ta click vào thì sẽ hiển thị thuộc tính khác
+         :first-child => Chỉnh sửa phần tử đầu tiên trong list 
+         :last-child => Chỉnh sửa phần tử cuối cùng trong list 
+
+        CSS Pseudo elements:
+         ::before => chèn 
+         ::after => 
+         ::first-letter => CSS cho chữ cái đầu tiên
+         ::first-line =>CSS cho dòng đầu tiên 
+         ::selection => Bôi den dổi màu trong phàn bôi đen 
+
+        CSS Position:
+        Relative => là vị trí tương đối lấy chính mình làm góc tọa độ không phụ thuộc và đối tượng nào đó bên ngoài nào cả
+        Absolute => là phụ thuộc vào thẻ cha gần nhất có thuộc tính Position và không quan trọng thuộc tinh Position đó có gì 
+        Fixed => Dùng để fix cứng 1 element một chỗ đứng yên khi scroll down hay up 
+        Sticky => Thuộc tính này không được hỗ trợ nhiều ở trình duyệt nên ít khi sử dụng 
+
+        FlexBox
+        gồm các thuộc tính: 
+            -flex container
+              +main axis => quyết định hướng flex items nằm như thế nào (ngang hay dọc)
+              +cross axis
+              +main start => Hiển thị flex theo thứ tự như thế nào theo thứ tự 1,2,3
+              +main end => Ngược lại maim start
+              +cross end
+              +cross start => Quyết định xem 1 hàng được bao nhiêu flex item
+              +flex item
+              +main size
+              +cross size
+        CSS FlexBox
+        display: flex| inline flex => Quyết định xem có sử dụng layout flex box hay không
+        flex-direction: row|column => Mặc định là nằm ngang(row), nếu như column là nằm dọc
+        flow-wrap: nowrap|wrap| wrap-reverse => Mặc định là (nowrap), wrap-reverse là đưa item lên hàng trên(giúp đảo chiều của cross start và cross end)
+        flex-basis:<length> set kích thước cho main size 
+        justify-content: flex-start|flex-end|center|space-betweem|space-around => giúp căn các flex items sang ngang trái, phải và giữa(tương tự trên giữa và dưới theo chiều từ trên xuông dưới).
+        justify-self: flex-start|flex-end|center => Khi đã set justify-content cho cha là flex container thì thẻ con tự động có thuộc tính justify-self
+        align-items: end; => đổi chiều của start và end axis
+
+        #BEM 
+         Là tiêu chuẩn đặt tên class khi css
+        #Ý nghĩa
+         -Viết tắt của: Block Element Modifiter
+         -Block: Khối
+         -Element: Thành phần trong khối
+         -Modifiter: Bổ sung ý nghĩa cho 'Block' hoặc 'Elements'
+
+        #Tại sao phải dùng BEM 
+          -Mỗi người đặt một kiểu không có sự thống nhất nên cần phải dùng BEM để có sự thống nhất
+          -Members đặt class trùng nhau, Css đè lên nhau 
+
+        #Cú pháp:
+          -.block
+          -.block_element
+          -.block--modifiter
+          -.block__element--modifiter
+ 

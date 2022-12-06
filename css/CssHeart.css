@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+body{
+    font-family: 'Island Moments', cursive;
+}
+h1{
+    font-size: 50px;
+    color: rgb(185, 238, 105);
+    text-align: center;
+    position: relative;
+    top: 45%;
+    transform: scale(2,2);
+    animation: growth ease-in-out 2s;
+}
+@keyframes growth {
+    from{
+        transform: scale(1,1);
+        opacity: 0;
+    }
+    to{
+        transform: scale(2,2);
+        opacity: 1;
+    }
+}

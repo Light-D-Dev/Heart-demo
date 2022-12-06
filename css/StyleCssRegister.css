@@ -1,0 +1,27 @@
+.container.login{
+    width: 600px; 
+    height: 400px;
+}
+
+.error{
+    display:flex;
+    align-items: center;
+    margin-top: -8px;
+    color: #d93025;
+    font-size: 13px;
+    display: none;
+}
+.error .error-icon{
+    margin-right: 5px;
+}
+
+/* input{
+    border-color: #d93025;
+} */
+.form-row.register{
+    margin-top: 35px;
+    margin-bottom: 9px;
+}
+.btn-login{
+    margin-top: 10px;
+}

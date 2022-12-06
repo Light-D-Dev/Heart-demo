@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>GreenBeli-Register</title>
+<meta charset="utf-8">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="css/Stylecssgeneral.css">
+<link rel="stylesheet" href="css/StyleCssRegister.css">
+</head>
+ 
+<body>
+    
+ <!-- header -->
+
+<div class="Layout-Navabar">
+    <div id="logo">
+        <img src="https://greenbeli.io/wp-content/uploads/2022/04/Logo-Green-Beli.png" alt="">
+    </div>
+        <ul class="nava-list">
+            <li class="nava-item"><a href="" class="text">About</a></li>
+            <li class="nava-item"><a href="" class="text">Connected</a></li>
+            <li class="nava-item"><a href="" class="text">Download game</a></li>
+        </ul>
+    
+        <ul class="nava-list acc">
+            <li class="nava-item"><a href="http://127.0.0.1:5500/Register.html" class="text active">Register</a></li>
+            <li class="nava-item"><a href="http://127.0.0.1:5500/Login.html" class="text">Login</a></li>
+        </ul>   
+</div>
+
+<!-- body -->
+ <div class="container login">
+    <h2 class="title-login">Register Form</h2>
+
+    <form action="form" class="form">
+        <div class="field email-field invalid">
+            <div class="form-row register">
+                <i class="fas fa-user"></i>
+                <input type="text" class="form-input-register username " placeholder="Enter email or phone">
+            </div>
+            <span class="error error-email">
+                <i class='bx bx-error-circle error-icon'></i>
+                <p class="error-text">Please enter a vaild email.</p>
+            </span>
+        </div>
+        
+         <div class="field">
+            <div class="form-row register password-field">
+                <i class="fas fa-key"></i>
+                <input type="password" class="form-input-register convert-password password" placeholder="Enter password">
+                <div>
+                    <i class="fas fa-eye eye" id="eye1"></i>
+                </div>
+            </div>
+            <span class="error error-password">
+                <i class='bx bx-error-circle error-icon'></i>
+                <p class="error-text">Please enter 8 character with number, symbol, small and capital letter.</p>
+            </span>
+         </div>
+       
+         <div class="field">
+            <div class="form-row register cfpassword-field">
+                <i class="fas fa-key"></i>
+                <input type="password" class="form-input-register convert-cfpassword cfpassword" placeholder="Enter confirm password">
+                <div>
+                    <i class="fas fa-eye eye" id="eye2"></i>
+                </div>        
+            </div>
+            <span class="error error-cfpassword">
+                <i class='bx bx-error-circle error-icon'></i>
+                <p class="error-text">Password don't match.</p>
+            </span>
+         </div>
+        
+        <div class="login-create">
+            <button type="submit" class="btn-login">Submit</button>    
+        </div>
+        
+    </form>
+ 
+ </div>
+ 
+  <!-- footer -->
+ <div class="container-social">
+    <div class="social-items">
+        <div class="social-title">
+            <h3>JOIN OUR COMMUNITIES</h3>
+        </div>
+    <div class="icon-social">
+        <a href="https://www.facebook.com/profile.php?id=100025218769215" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-discord"></i></a> 
+    </div>
+    </div>
+ </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="js/app1.js"></script>
+<script src="https://kit.fontawesome.com/e2157717e5.js" crossorigin="anonymous"></script>
+
+</html>
